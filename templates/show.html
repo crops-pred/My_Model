@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1"> 
+<title>Crop Predictor</title>
+<style>
+
+    body{
+      /*background-image: url( {{ url_for('static', filename='templates/1.jpg') }} ); */
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      width: auto;
+      height: 600px;
+     
+    }
+    
+    /* Add a black background color to the top navigation */
+    .topnav {
+        background-color: #333;
+        overflow: hidden;
+      }
+      
+    /* Style the links inside the navigation bar */
+    .topnav a {
+        float: left;
+        color: #fff;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+      }
+      
+    /* Change the color of links on hover */
+    .topnav a:hover {
+        background-color: #ddd;
+        color: black;
+      }
+      
+    /* Add a color to the active/current link */
+    .topnav a.active {
+        background-color: #04AA6D;
+        color: white;
+      }
+    body {
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        
+      }
+    
+    .topnav {
+        overflow: hidden;
+        background-color: #444;
+      }
+    
+    .topnav a {
+        float: left;
+        color: #f6f6f6;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+      }
+    
+    .topnav a:hover {
+        background-color: #ddd;
+        color: black;
+      }
+    
+    .topnav a.active {
+        background-color: Blue;
+        color: white;
+      }
+    
+     </style>
+    
+    </head>
+<body background="{{ url_for('static', filename='agrii.jpg') }}">
+<div><center>
+<h1>Crops</h1>
+<p><h2>The crop {{inf}} will be suitable for the given information</h2></p>
+Click here to go home page<a class="active" href="{{ url_for('home') }}">PREDICT</a>
+</center>
+</div>
+</body>
+</html>

@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Crop Recommendation</title>
+<style>
+  
+body{
+  /*background-image: url( {{ url_for('static', filename='templates/1.jpg') }} ); */
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: auto;
+  height: 1000px;
+}
+
+  table, th, td 
+  {
+    border:1px solid black;
+  }
+    /* Add a black background color to the top navigation */
+.topnav {
+    background-color: #333;
+    overflow: hidden;
+  }
+  
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    float: left;
+    color: #fff;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  /* Add a color to the active/current link */
+  .topnav a.active {
+    background-color: #04AA6D;
+    color: white;
+  }
+  body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: x-large;
+    font-weight: 700;
+  }
+
+  .topnav {
+    overflow: hidden;
+    background-color: #444;
+  }
+
+  .topnav a {
+    float: left;
+    color: #f6f6f6;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+
+  .topnav a.active {
+    background-color: Blue;
+    color: white;
+  }
+</style>
+
+</head>
+<body background="{{ url_for('static', filename='agrii.jpg') }}">
+<div>
+<form action="/" method="POST">
+  <div class="topnav">
+    <a class="active" href="{{ url_for('home') }}">Home</a>
+    <a href="{{ url_for('predict') }}">Crop Prediction</a>
+    <a href="{{ url_for('fert') }}">Fertilizers</a>
+    <a href="{{ url_for('about') }}">About</a>
+  </div>
+  
+<center>
+<b><h1><p>Fertilizers for sutiable crops</p></h1></b>
+<table style="width:80%"
+
+
+<tr><h2>
+  <th>Crop</th>
+  <th>Sutiable Fertilizer</th></h2>
+</tr>
+<tr><h3>
+  <td>Rice</td>
+  <td>Ammonium sulfate </td>
+</tr>
+<tr>
+  <td> Maize</td>
+  <td>Nitrogen(135:62.5:50 NPK)</td>
+</tr>
+<tr>
+  <td> Chickpea</td>
+  <td>15-20 kg nitrogen (N) and 50-60 kg phosphours(P) pre ha</td>
+</tr>
+<tr>
+  <td> Kidneybeans</td>
+  <td>Nitrogen and phosphours</td>
+  </tr>
+  <tr>
+    <td> Pigeonpeas</td>
+    <td>Nitrogen phosphours potassiun</td>
+  </th>
+  <tr>
+    <td> Mothbeans</td>
+    <td>Doesn't require additional fertilizer</td>
+  </tr>
+<tr>
+  <td> Mungbean</td>
+  <td>phosphours and potassiun</td>
+</tr>
+<tr>
+  <td> Blackgram</td>
+  <td>20 kg/ha Nitrogen, 40 kg/ha phosphours, 20 kg/ha Potash and 20 kg/ha sulphur</td>
+</tr>
+<tr>
+  <td> Lentil</td>
+  <td>NPK</td>
+</tr>
+<tr>
+  <td> Pomegranate</td>
+  <td>NPK-600-700 gm of N, 200-250 gm of P2O5 and 200-250 gm of K2O per year</td>
+</tr>
+<tr>
+  <td> Banana</td>
+  <td>8-10-8(NPK)</td>
+</tr>
+<tr>
+  <td> Mango</td>
+  <td>1:1:1 or 2:2:2 NPK ratio</td>
+</tr>
+<tr>
+  <td> Grapes</td>
+  <td>50% of the N and K, together with 75% of P and Mg</td>
+</tr>
+<tr>
+  <td>  Watermelon</td>
+  <td>NPK</td>
+</tr>
+<tr>
+  <td>Muskmelon</td>
+  <td>NPK 40:60:30 kg/ha</td>
+</tr>
+<tr>
+  <td> Apple</td>
+  <td>N-P-K 12-12-12 or 11-15-15 per mature</td>
+</th>
+<tr>
+  <td>Orange</td>
+  <td>Npk 20-10-5,(Mg-S)-(3-23)</td>
+</tr>
+<tr>
+  <td> Papaya</td>
+  <td>Urea,nitrogen,phosphate,potash</td>
+</tr>
+<tr>
+  <td> Coconut</td>
+  <td>Urea,phosphate,potash</td>
+</tr>
+<tr>
+  <td> Cotton</td>
+  <td>N-P-K 20-10-10</td>
+</tr>
+<tr>
+  <td> Jute</td>
+  <td>Urea</td>
+</tr>
+<tr>
+  <td>Coffee</td>
+  <td>Ca + Mg</td></h3>
+</tr>
+</th>
+</table>
+</center>
+ </form>
+</div>
+</body>
+</html>
